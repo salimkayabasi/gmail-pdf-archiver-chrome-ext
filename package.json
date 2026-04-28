@@ -1,0 +1,19 @@
+{
+  "name": "gmail-pdf-archiver",
+  "version": "1.0.0",
+  "description": "Seamlessly download and archive your Gmail conversations as high-quality PDFs with all attachments included.",
+  "main": "src/background.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "mkdir -p dist && cp -r src/* dist/ && terser dist/background.js -o dist/background.js -c -m && terser dist/content.js -o dist/content.js -c -m"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
+    "terser": "^5.46.2"
+  }
+}

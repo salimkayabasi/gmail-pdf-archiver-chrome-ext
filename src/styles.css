@@ -1,0 +1,78 @@
+/* Download Button */
+.scrapper-dl-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #f1f3f4;
+    transition: background-color 0.2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    position: fixed;
+    z-index: 100;
+}
+
+.scrapper-dl-btn:hover {
+    background-color: #e8eaed;
+}
+
+/* Toast Container */
+.scrapper-toast-container {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Base Toast Style */
+.scrapper-toast {
+    color: #f1f3f4;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    max-width: 400px;
+    word-wrap: break-word;
+}
+
+.scrapper-toast.show {
+    opacity: 1;
+}
+
+/* Specific Toast Types */
+.scrapper-toast.success {
+    background-color: #202124;
+}
+
+.scrapper-toast.error {
+    background-color: #d93025;
+}
+
+.scrapper-toast.progress {
+    background-color: #1a73e8; /* Google blue */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Spinner Animation */
+.scrapper-spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: scrapper-spin 1s linear infinite;
+}
+
+@keyframes scrapper-spin {
+    to { transform: rotate(360deg); }
+}

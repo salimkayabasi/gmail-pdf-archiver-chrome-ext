@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Gmail PDF Archiver",
+    "description": "Seamlessly download and archive your Gmail conversations as high-quality PDFs with all attachments included.",
+    "version": "1.0",
+    "permissions": [
+        "downloads",
+        "tabs",
+        "debugger"
+    ],
+    "host_permissions": [
+        "https://mail.google.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://mail.google.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ]
+}
