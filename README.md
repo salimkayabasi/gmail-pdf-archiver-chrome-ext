@@ -5,6 +5,8 @@
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Test](https://img.shields.io/badge/Tests-Jest-brightgreen.svg)
 
+![Gmail PDF Archiver](./assets/logo.webp)
+
 Welcome to the **Gmail PDF Archiver** repository! This is a powerful, automated Chrome Extension designed to seamlessly export your Gmail conversations into high-quality PDFs, complete with all their associated attachments. Whether you're archiving important communications or just keeping backups, this extension simplifies the process right from your inbox.
 
 ✨ **Proudly AI-Crafted:** This entire project was fully vibecoded from the ground up using **Gemini 3.1 Pro on Antigravity**! It stands as a proud testament to the speed and power of modern AI-assisted software development. 🚀

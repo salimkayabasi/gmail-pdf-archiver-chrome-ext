@@ -26,5 +26,17 @@
                 "styles.css"
             ]
         }
-    ]
+    ],
+    "icons": {
+        "16": "assets/icon.webp",
+        "48": "assets/icon.webp",
+        "128": "assets/icon.webp"
+    },
+    "action": {
+        "default_icon": {
+            "16": "assets/icon.webp",
+            "48": "assets/icon.webp",
+            "128": "assets/icon.webp"
+        }
+    }
 }

@@ -5,7 +5,7 @@
   "main": "src/background.js",
   "scripts": {
     "test": "jest --coverage",
-    "build": "mkdir -p dist && cp -r src/* dist/ && terser dist/background.js -o dist/background.js -c -m && terser dist/content.js -o dist/content.js -c -m"
+    "build": "mkdir -p dist && cp -r src/* dist/ && cp -r assets dist/ && terser dist/background.js -o dist/background.js -c -m && terser dist/content.js -o dist/content.js -c -m"
   },
   "keywords": [],
   "author": "",
