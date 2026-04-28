@@ -39,6 +39,7 @@ function injectDownloadButton() {
 }
 
 // Observe DOM modifications AND resize/scroll to reinject/re-position the button
+/* istanbul ignore next */
 if (typeof jest === 'undefined') {
     const observer = new MutationObserver(() => injectDownloadButton());
     window.addEventListener('resize', injectDownloadButton);
@@ -292,6 +293,7 @@ async function onDownloadClicked() {
     updateProgressToast(`Successfully processed ${processed} emails!`, true);
 }
 
+/* istanbul ignore next */
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         injectDownloadButton,

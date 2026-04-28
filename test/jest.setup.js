@@ -53,3 +53,6 @@ Object.defineProperty(global.Element.prototype, 'innerText', {
     this.textContent = value;
   }
 });
+
+// Silence expected console errors during tests
+global.console.error = jest.fn();
