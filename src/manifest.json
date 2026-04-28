@@ -28,15 +28,15 @@
         }
     ],
     "icons": {
-        "16": "assets/icon.webp",
-        "48": "assets/icon.webp",
-        "128": "assets/icon.webp"
+        "16": "assets/icon.png",
+        "48": "assets/icon.png",
+        "128": "assets/icon.png"
     },
     "action": {
         "default_icon": {
-            "16": "assets/icon.webp",
-            "48": "assets/icon.webp",
-            "128": "assets/icon.webp"
+            "16": "assets/icon.png",
+            "48": "assets/icon.png",
+            "128": "assets/icon.png"
         }
     }
 }
